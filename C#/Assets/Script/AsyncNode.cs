@@ -7,20 +7,6 @@ using NFrameWork.NTask;
 using UnityEngine;
 
 
-public class NTask : INotifyCompletion
-{
-    public void OnCompleted(Action continuation)
-    {
-        throw new NotImplementedException();
-    }
-
-
-    public async NTask<int> Te()
-    {
-        await NFrameWork.NTask.NTask.Create();
-        return 1;
-    }
-}
 
 
 public class MyAsync : IEnumerator
@@ -94,10 +80,8 @@ public class MyAwaiter2 : ICriticalNotifyCompletion
 
 public static class Test
 {
-    static async MyTask Main()
+    static async NTask Main()
     {
-        await new MyAsync();
-        await new MyAsync2();
     }
 }
 
