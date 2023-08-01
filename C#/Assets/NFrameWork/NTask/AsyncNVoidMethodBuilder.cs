@@ -19,7 +19,7 @@ namespace NFrameWork.NTask
         /// <summary>
         /// 2.TaskLike Task property(void)
         /// </summary>
-        public NTask Task => default;
+        public NVoid Task => default;
 
 
         /// <summary>

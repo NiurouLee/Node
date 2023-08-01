@@ -33,6 +33,8 @@ public class IEnumerableNode
     // 如果使用while(enumerator.MoveNext()) 需要调用using  保证IEnumerator 的 dispose 能够正确被调用
     static void Test()
     {
+        
+ 
         foreach (var item in CreateSimpleIterator())
         {
             UnityEngine.Debug.Log(item);
@@ -61,6 +63,21 @@ public class IEnumerableNode
                 int value = enumerator1.Current;
                 Debug.Log(value);
             }
+        }
+    }
+
+    
+    public class ObseverDicOjb<K,V>: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<K, V>>
+    {
+        public Dictionary<K, V> Dictionary;
+        public IEnumerator<KeyValuePair<K, V>> GetEnumerator()
+        {
+            return (IEnumerator<KeyValuePair<K,V>>)Dictionary;
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
         }
     }
 
