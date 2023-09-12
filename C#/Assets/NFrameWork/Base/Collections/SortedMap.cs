@@ -10,7 +10,7 @@ namespace NFrameWork.Collection
     /// </summary>
     /// <typeparam name="T"></typeparam>
     /// <typeparam name="K"></typeparam>
-    public class SortedLinkList<T, K> : Dictionary<T, K> where T : IComparable<T>, IEnumerable
+    public class SortedMap<T, K> : Dictionary<T, K> where T : IComparable<T>, IEnumerable
     {
         public class Node
         {

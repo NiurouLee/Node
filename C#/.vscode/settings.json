@@ -52,5 +52,10 @@
         "temp/":true,
         "Temp/":true
     },
-    "dotnet.defaultSolution": "C#.sln"
+    "dotnet.defaultSolution": "C#.sln",
+    "editor.fontFamily": "source code pro",
+    "files.autoSave": "onFocusChange",
+    "editor.fontSize": 20,
+    "dotnetAcquisitionExtension.installTimeoutValue": 30,
+    "csharp.maxProjectFileCountForDiagnosticAnalysis": 0
 }

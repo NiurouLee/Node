@@ -9,6 +9,7 @@ public class UINode : MonoBehaviour
     /*
     view:应该只关系显示层面的东西，不关心任何逻辑，
     
+    
 
 
 

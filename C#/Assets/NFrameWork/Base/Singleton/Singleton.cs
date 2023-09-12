@@ -5,6 +5,7 @@ namespace NFrameWork.Singleton
     public abstract class Singleton<T> : ISingleton where T : Singleton<T>, new()
     {
         private bool isDisposed;
+        
         private static T _instance;
         public static T Ins => _instance;
 

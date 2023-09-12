@@ -1,6 +1,7 @@
-namespace NFrameWork.GameModule
+namespace NFrameWork.Module
 {
-    public class GameModuleBase
+    public class GameModuleBase<T> where T : GameModuleLogicBase
     {
+        public T Logic { get; private set; }
     }
 }

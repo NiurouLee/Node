@@ -4,9 +4,9 @@ namespace Script.SuanFa
 {
     public class S_01
     {
-        private static byte a = 1;
-        private static byte b = a + 1;
-        private static Index c = ^1;
+        //       private static byte a = 1;
+        //       private static byte b = a + 1;
+        //       private static Index c = ^1;
     }
 
     ///算法与数据结构
